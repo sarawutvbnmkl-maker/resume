@@ -1,1 +1,76 @@
-# resume
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume | สราวุฒิ ประดาสุข</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="grid"></canvas>
+
+<div id="gate">
+  <p>เปิดเสียงเพื่อประสบการณ์ที่ดีที่สุด</p>
+  <button id="enter">ENTER</button>
+</div>
+
+<!-- เปลี่ยนชื่อไฟล์เพลงเป็น music.mp3 แล้ววางไว้โฟลเดอร์เดียวกับไฟล์นี้ ถ้าไม่มีจะใช้เสียงสังเคราะห์แทน -->
+<audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+<button id="music" aria-label="เปิด/ปิดเพลง"><b></b><b></b><b></b><b></b><b></b></button>
+
+<main>
+  <header class="hero">
+    <img class="photo" src="profile.jpg" alt="รูปโปรไฟล์ สราวุฒิ ประดาสุข">
+    <span class="tag">Resume</span>
+    <h1 class="glitch" data-t="SARAWOOT PRADASUK">SARAWOOT PRADASUK</h1>
+    <div class="role" id="role"></div>
+    <div class="links">
+      <a class="btn" href="#projects">ดูผลงาน</a>
+      <a class="btn" href="#contact">ติดต่อผม</a>
+    </div>
+  </header>
+
+  <section><h2>เกี่ยวกับผม</h2>
+    <p class="about">มีความสนใจด้าน IT Support มีความรู้ด้านการติดตั้งและแก้ไขปัญหาคอมพิวเตอร์ การใช้งานระบบเครือข่ายเบื้องต้น และ Microsoft Office มีประสบการณ์จากโครงการพัฒนาระบบ Odoo 17 พร้อมเรียนรู้สิ่งใหม่ มีความรับผิดชอบ และสามารถทำงานเป็นทีมได้ดี</p></section>
+
+  <section><h2>ทักษะ</h2>
+    <div class="chips">
+      <span>Microsoft Word</span><span>Microsoft Excel</span><span>Microsoft PowerPoint</span>
+      <span>HTML / CSS (พื้นฐาน)</span><span>Python (พื้นฐาน)</span>
+      <span>ติดตั้งโปรแกรมและแก้ไขปัญหาคอมพิวเตอร์</span>
+      <span>ทำงานเป็นทีม</span><span>สื่อสารและประสานงาน</span>
+    </div></section>
+
+  <section><h2>ประสบการณ์ทำงาน</h2>
+    <div class="timeline">
+      <div class="item"><small>สิงหาคม 2025 – มีนาคม 2026</small><h3>Backend Developer</h3><p>IOT INOVATION</p>
+        <ul>
+          <li>พัฒนาและปรับแต่งระบบ Odoo 17 ERP ตามความต้องการของผู้ใช้งาน</li>
+          <li>ทดสอบระบบ แก้ไขข้อผิดพลาด (Debug) และตรวจสอบการทำงานก่อนส่งมอบ</li>
+          <li>จัดทำเอกสารประกอบการพัฒนาและคู่มือการใช้งานเบื้องต้น</li>
+          <li>ประสานงานกับทีมพัฒนาเพื่อวิเคราะห์และแก้ไขปัญหาของระบบ</li>
+        </ul></div>
+    </div></section>
+
+  <section><h2>ประวัติการศึกษา</h2>
+    <div class="timeline">
+      <div class="item"><small>2022 – 2026</small><h3>มหาวิทยาลัยศรีปทุม</h3><p>Sripatum University · เทคโนโลยีสารสนเทศ</p></div>
+      <div class="item"><small>ก่อนหน้า</small><h3>สยามบริหารธุรกิจนนทบุรี</h3><p>SBAC Nonthaburi</p></div>
+    </div></section>
+
+  <section id="projects"><h2>ผลงาน</h2>
+    <div class="projects">
+      <div class="card"><h3>ERP Odoo 17 · กองสื่อสารตำรวจ</h3><p>ปรับปรุงฟังก์ชันการทำงานของระบบ และให้การสนับสนุนด้านเทคนิคแก่ผู้ใช้เมื่อเกิดปัญหา</p></div>
+      <div class="card"><h3>เว็บ Resume นี้</h3><p>ทำเองตั้งแต่ศูนย์ใน VS Code</p></div>
+    </div></section>
+
+  <footer id="contact"><h2>ติดต่อ</h2>
+    <p>อีเมล <a href="mailto:sarawutvbnmkl@gmail.com">sarawutvbnmkl@gmail.com</a></p>
+    <p>โทร <a href="tel:0612370646">061-237-0646</a> · <a href="tel:0928435892">092-843-5892</a></p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
